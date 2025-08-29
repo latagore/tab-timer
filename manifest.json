@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Timers",
+  "version": "1.0.0",
+  "description": "Set per-tab timers, get HTML5 notifications, and jump back to the tab when time is up.",
+  "permissions": ["alarms", "notifications", "storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Timers"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

@@ -1,0 +1,55 @@
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color-scheme: light dark;
+}
+body {
+  min-width: 360px;
+  margin: 0;
+  padding: 12px;
+}
+header { margin-bottom: 8px; }
+h1 { font-size: 16px; margin: 0 0 8px; }
+h2 { font-size: 13px; margin: 16px 0 8px; opacity: 0.8; }
+
+section { margin-bottom: 8px; }
+.row { display: grid; gap: 6px; margin-bottom: 8px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+label span { display: block; font-size: 12px; opacity: 0.8; margin-bottom: 4px; }
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, CanvasText 20%, transparent);
+  background: Canvas;
+  color: CanvasText;
+}
+button {
+  padding: 8px 10px;
+  border: 1px solid color-mix(in oklab, CanvasText 20%, transparent);
+  background: color-mix(in oklab, CanvasText 10%, Canvas);
+  color: CanvasText;
+  border-radius: 12px;
+  cursor: pointer;
+}
+button.secondary { opacity: 0.9; }
+button:hover { filter: brightness(1.05); }
+
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid color-mix(in oklab, CanvasText 20%, transparent);
+  border-radius: 12px;
+}
+.item .meta { font-size: 12px; opacity: 0.7; }
+.actions { display: flex; align-items: center; gap: 6px; }
+a.rowlink { color: inherit; text-decoration: none; }
+a.rowlink:hover { text-decoration: underline; }
+.smallbtn {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+#hint { font-size: 11px; opacity: 0.7; margin-top: 6px; }

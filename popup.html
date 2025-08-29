@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tab Timers</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tab Timers</h1>
+    </header>
+
+    <section id="new-timer">
+      <label class="row">
+        <span>Label (optional)</span>
+        <input id="label" type="text" placeholder="e.g., Build job, Upload, Script" />
+      </label>
+
+      <div class="grid">
+        <label>
+          <span>Minutes</span>
+          <input id="mins" type="number" min="0" value="5" />
+        </label>
+        <label>
+          <span>Seconds</span>
+          <input id="secs" type="number" min="0" max="59" value="0" />
+        </label>
+      </div>
+
+      <button id="startBtn">Start timer on this tab</button>
+      <p id="hint"></p>
+    </section>
+
+    <section>
+      <h2>Active</h2>
+      <ul id="activeList" class="list"></ul>
+    </section>
+
+    <section>
+      <h2>Completed</h2>
+      <ul id="completedList" class="list"></ul>
+      <button id="clearCompletedBtn" class="secondary">Clear completed</button>
+    </section>
+
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>

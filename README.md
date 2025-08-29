@@ -1,5 +1,7 @@
 # Tab Timers ⏱️
 
+![Screenshot of Tab Timers extension popup](docs/screenshot.png)
+
 A simple Chrome extension that lets you set per-tab timers. Perfect for long-running automated work (builds, uploads, scripts, etc.) — set a timer, forget it, and get a notification when it’s done. Clicking the notification or timer takes you straight back to the tab.
 
 ---
